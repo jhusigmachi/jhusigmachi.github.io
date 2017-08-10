@@ -34,10 +34,12 @@
 
 <body>
 
+    <div id="navbar"></div>
     <script>
 	    var link = document.querySelector('link[rel="import"]');
-	    var content = link.import;
-	    document.body.appendChild(content.cloneNode(true));
+	    var content = link.import.querySelector('nav');
+	    var clone = document.importNode(nav.content, true);
+	    document.querySelector('#navbar').appendChild(clone);
     </script>
 	
     <div class="container">
