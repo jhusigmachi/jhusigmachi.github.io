@@ -28,24 +28,20 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<script>
-  if ('registerElement' in document
-    && 'createShadowRoot' in HTMLElement.prototype
-    && 'import' in document.createElement('link')
-    && 'content' in document.createElement('template')) {
-    // We're using a browser with native WC support!
-  } else {
-    document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"><\/script>')
-  }
-</script>
-	<script src="includes/html-include.min.js"></script>
-	
+    <script>
+  	if ('registerElement' in document && 'createShadowRoot' in HTMLElement.prototype && 'import' in document.createElement('link') && 'content' in document.createElement('template')) {
+    	    // We're using a browser with native WC support!
+  	} else {
+    	    document.write('<script src="https:\/\/cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/0.7.5/webcomponents.min.js"><\/script>')
+  	}
+    </script>
+    <script src="includes/html-include.min.js"></script>
 	
 </head>
 
 <body>
 
-<html-include src="includes/navbar.html"></html-include>
+    <html-include src="includes/navbar.html"></html-include>
 	
     <div class="container">
 
